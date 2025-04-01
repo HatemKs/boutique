@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Boutique H.A.S.H</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Startanimation -->
+<div id="start-overlay">
+<div class="logo-box">
+<h1>Boutique H.A.S.H</h1>
+</div>
+</div>
+
+<!-- Neuer Header mit Navigation -->
+<header class="topnav">
+<div class="logo">Boutique H.A.S.H</div>
+<nav>
+<a href="#shop">Shop</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#cart">Warenkorb</a>
+</nav>
+</header>
+
+<!-- Suche & Filter -->
+<section class="filter-bar">
+<input type="text" id="search" placeholder="Parfüm suchen..." />
+<select id="filter">
+<option value="alle">Alle</option>
+<option value="herren">Herren</option>
+<option value="damen">Damen</option>
+<option value="unisex">Unisex</option>
+</select>
+<select id="duftrichtung">
+<option value="alle">Alle Duftrichtungen</option>
+<option value="frisch">Frisch</option>
+<option value="würzig">Würzig</option>
+<option value="blumig">Blumig</option>
+<option value="süß">Süß</option>
+<option value="zitrisch">Zitrisch</option>
+<option value="orientalisch">Orientalisch</option>
+<option value="aquatisch">Aquatisch</option>
+<option value="holzig">Holzig</option>
+<option value="fruchtig">Fruchtig</option>
+</select>
+</section>
+
+<!-- Dynamischer Nachrichtenticker -->
+<div id="ticker"></div>
+
+<!-- Produktbereich -->
+<main id="shop">
+<section class="grid"></section>
+</main>
+
+<!-- Warenkorb -->
+<aside id="cart">
+<h2>Warenkorb</h2>
+<ul id="cart-items"></ul>
+<p id="versand"></p>
+<p><strong>Gesamt: <span id="total">0 €</span></strong></p>
+<input type="text" id="coupon" placeholder="Rabattcode" />
+<button onclick="applyCoupon()">Einlösen</button>
+</aside>
+
+<!-- Footer -->
+<footer id="kontakt">
+<h3>Kontakt</h3>
+<p>Telefon: 0152028814479</p>
+<p>Kontaktperson: Hatem Kawash</p>
+<p>Adresse: Berliner Straße 21, 22087 Hamburg</p>
+<p>Email: contact.boutique@gmail.com</p>
+<p>&copy; 2025 Boutique H.A.S.H GmbH</p>
+</footer>
+
+<!-- JS einbinden -->
+<script src="script.js"></script>
+</body>
+</html>

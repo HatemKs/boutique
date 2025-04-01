@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<title>Warenkorb – Boutique H.A.S.H</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<h1>Boutique H.A.S.H – Warenkorb</h1>
+<nav>
+<a href="index.html">Zurück zum Shop</a>
+</nav>
+</header>
+
+<main>
+<section class="cart cart-page">
+<h2>Dein Warenkorb</h2>
+<ul id="cart-items"></ul>
+<p><strong>Gesamt:</strong> <span id="total">0.00 €</span></p>
+<input type="text" id="coupon" placeholder="Rabattcode eingeben" />
+<button onclick="applyCoupon()">Einlösen</button>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2025 Boutique H.A.S.H</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<p id="versand">Versand: wird berechnet ...</p>
